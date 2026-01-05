@@ -1,0 +1,17 @@
+Maven is a build tool for java applications. we will get the dependencies files of java appl by using maven.
+Once everything is done we will deploy the application in Apache TomCat
+there are 7 commands in maven life cycle. 
+First we have to install maven
+apt install maven -y ---for ubuntu machines
+and then to verify its version use mvn -v
+maven lifecycle: 
+1. mvn validate
+2. mvn compile
+3. mvn test
+4. mvn package
+5. mvn install or mvn clean install --- by using this command we will download all jar and war files in the project
+6. mvn verify
+7. mvn deploy
+
+
+after installing all the available files into our system we have to deploy this application in Apache Tomcat 
