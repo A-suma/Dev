@@ -1,0 +1,25 @@
+Apache tomcat is an open source web server. here we will deploy all the war files generated in java application.... Default port num is 8080
+first we have to download apache tomcat into our system.
+
+wget https://downloads.apache.org/tomcat/tomcat-9/v9.0.111/bin/apache-tomcat-9.0.111.tar.gz
+
+this will download in tar form so we have to install it by untaring for this we will use-
+tar -xvf downloaded apache tomcat
+
+ow tomcat is installed in our machine.
+
+there are few important files in tomcat 
+---
+in bin folder we have 2 files startup.sh and shutdown.sh by running these shell scripts we will start and stop the apache tomcat server.
+sh startup.sh -----to start the server
+sh shutdown.sh ---- to shutdown the server
+----
+
+in conf folder we have few files to edit so that we can change the default port number and we can give username and password to the tomcat
+
+1. vi server.xml ----> here we can change the default port num 
+if we change the port num themn we have to add it in ec2 instance security groups
+2. vi tomcat-users.xml ---> we can add username and password after this we have to comment few lines in context.xml files
+3. come to root and find - / -name context.xml
+4. edit all the list of files and comment the valve 
+after that only u can be able to login by using above username and password.
