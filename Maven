@@ -15,3 +15,6 @@ maven lifecycle:
 
 
 after installing all the available files into our system we have to deploy this application in Apache Tomcat 
+
+update-alternatives --list java
+update-alternatives --config java
