@@ -9,7 +9,7 @@ maven lifecycle:
 2. mvn compile
 3. mvn test
 4. mvn package
-5. mvn install or mvn clean install --- by using this command we will download all jar and war files in the project
+5. mvn install or mvn clean install --- by using this command we will download all jar and war files in the project and those files will store in a new folder which is target
 6. mvn verify
 7. mvn deploy
 
