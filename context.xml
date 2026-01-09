@@ -1,0 +1,10 @@
+first we have to find the files with the same name in root
+find - / -name context.xml
+
+and then we have to comment few lines
+
+I haved modified some changes in this file like commited the lines
+
+<!--
+<Valve className="org.apache.catalina.valves.RemoteAddrValve"
+         allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" /> -->
